@@ -1,0 +1,87 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    /* color: aqua; */
+    box-sizing: border-box;
+}
+body{
+    background-color:#f7f7f7;
+    font-family: system-ui, sans serif;
+    position: relative;
+    height:100vh;
+}
+#nav_filter{
+    align-items: center;
+    justify-content: center;
+    /* border:1px solid #ccc; */
+    display: flex;
+    gap: 1rem;
+    padding: .5rem;
+    flex-wrap: wrap;
+}
+#nav_filter span{
+    padding: .7rem;
+    border-radius: 24px;
+    /* border: 1px solid red; */
+    cursor: pointer;
+    color: #555;
+}
+#nav_filter span:hover{
+    color: hsl(199, 100%, 50%);
+    transition:color .2s ease;
+    background-color: hsla(199, 100%, 50%, 0.05);
+}
+#selected{
+    color: hsl(199, 100%, 50%);
+
+    background-color: hsla(199, 100%, 50%, 0.05);
+
+}
+#nav2{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+    /* padding: .5rem; */
+    border-bottom: 1px solid #eee;
+    margin: 4rem;
+    flex-wrap: wrap;
+   
+}
+#nav2 span{
+    padding: 1rem;
+    color: #555;
+}
+#slt{
+    border-bottom: 3px solid hsl(199, 100%, 50%);
+    background-color: hsla(199, 100%, 50%, 0.05);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    
+}
+#nav2 span:hover{
+    color: hsl(199, 100%, 50%);
+    transition: color .2s ease;
+    background-color: hsla(199, 100%, 50%,0.05);
+    cursor: pointer;
+}
+
+output{
+    position: absolute;
+    font-size: 300%;
+    top: 65%;
+    left: 50%;
+    border: 2px solid #ccc;
+    padding: 3rem;
+    transform: translate(-50%,-50%);
+}
+header{
+    font-size: 350%;
+    /* border: 1px solid red; */
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 3px 24px #ccc;
+}
