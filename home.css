@@ -57,7 +57,10 @@ li>a{
     /* border:1px solid #888 ; */
     /* border:2px solid #e35; */
     /* background-color: #999; */
-
+    transition: scale .2s ease-in;
+}
+.img:hover{
+    scale: 2;
 }
 .btn{
     cursor: pointer;
