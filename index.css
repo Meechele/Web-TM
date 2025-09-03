@@ -85,3 +85,21 @@ header{
     text-align: center;
     box-shadow: 0 3px 24px #ccc;
 }
+header{
+    border:1px solid #ccc;
+    padding:2rem;
+    position:relative;
+    /* font-size: 100%; */
+}
+header>a{
+    position:absolute;
+    left:2rem;
+    top:50%;
+    transform:translateY(-50%);
+    background-color: hsla(214, 80%, 20%, .08);
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: initial;
+    text-decoration: none;
+}

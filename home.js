@@ -66,11 +66,17 @@
 // console.log(int.indexOf(10))
 // int.push(100,200);
 // console.log(int.length)
-document.querySelectorAll('.img').forEach(img=> {
-    img.addEventListener('click',(e) => {
-        document.querySelector('aside').classList.add('view');
-    })
-})
-document.querySelector('button.close').addEventListener('click', (e) => {
-    document.querySelector('aside').classList.remove('view')
+// document.querySelectorAll('.img').forEach(img=> {
+//     img.addEventListener('click',(e) => {
+//         document.querySelector('aside').classList.add('view');
+//     })
+// })
+// document.querySelector('button.close').addEventListener('click', (e) => {
+//     document.querySelector('aside').classList.remove('view')
+// })
+const confetti = document.querySelector('.confetti');
+document.addEventListener('mousemove', (e) => {
+        confetti.style.top=e.offsetY  + 'px';
+        confetti.style.left=e.offsetX + 'px';
+       
 })
